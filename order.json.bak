@@ -1,0 +1,27 @@
+{
+        "orderNumber": "0000000001",
+        "date": "2014-07-11",
+        "time": "00:00:00",
+        "storeCode": "10203",
+        "vip":{
+            "vipCode": "12345678",
+            "vipName": "我们",
+            "isBirthday": true,
+            "canUsePoint": 1000,
+            "endPoint": 2
+        },
+        "items":[{"id": "1",
+            "sku": "0000001",
+            "itemName": "商品1",
+            "count": 2,
+            "price": 2.50,
+            "pay": 4.00,
+            "discountPrice": 1},
+            {"id": "2",
+                "sku": "testing",
+                "itemName": "商品测试2",
+                "count": 3.0000,
+                "price": 3.00,
+                "pay": 8.00,
+                "discountPrice": 1.00}]
+}

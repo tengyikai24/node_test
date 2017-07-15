@@ -1,0 +1,5 @@
+package sale;
+message test
+{
+	required string name = 1;
+}

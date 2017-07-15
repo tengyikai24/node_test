@@ -1,0 +1,25 @@
+package sale;
+message order
+{
+	required int32 status=1;
+	required string sellercode=2;
+	optional double alltopay =3;
+	optional string vipcode=4;
+	message itemList
+	{
+		required string itemcode = 1;
+		required string shortname = 2;
+		required double oriprice = 3;
+		required double count = 4;
+		required double price = 5;
+		required string promotioncode = 6;
+		optional double discount = 7;
+	}
+	
+	repeated itemList items=5;
+}
+		
+		
+	
+	
+	

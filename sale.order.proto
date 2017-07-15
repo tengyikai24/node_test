@@ -1,0 +1,36 @@
+package sale;
+message order
+{
+	required string orderNumber=1;
+	required string date=2;
+	required string time=3;
+	required string storeCode=4;
+	
+	message vipInfo
+	{
+		required string vipCode = 1;
+		required string vipName = 2;
+		required bool isBirthday = 3;
+		required int32 canUsePoint = 4;
+		required int32 endPoint = 5;
+	}
+	optional vipInfo vip=5;
+	
+	message itemList
+	{
+		required string id = 1;
+		required string sku = 2;
+		required string itemName = 3;
+		required double count = 4;
+		required double price = 5;
+		required double pay = 6;
+		required double discountPrice = 7;
+	}
+	
+	repeated itemList items=6;
+}
+		
+		
+	
+	
+	
